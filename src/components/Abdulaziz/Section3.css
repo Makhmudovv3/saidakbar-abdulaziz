@@ -1,0 +1,138 @@
+.partner-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #ffffff;
+}
+
+.partner-header h1 {
+    font-size: 32px;
+    color: #111827;
+    margin-bottom: 16px;
+}
+
+.partner-header p {
+    font-size: 16px;
+    color: #6b7280;
+    max-width: 850px;
+    margin: 0 auto 60px;
+    line-height: 1.5;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.feature-card {
+    background: white;
+    border-radius: 16px;
+    padding: 32px 20px;
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Rasmda ko'ringan mayin soya */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    transition: transform 0.2s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon-wrapper {
+    width: 56px;
+    height: 56px;
+    background-color: #eff6ff;
+    /* Och ko'k fon */
+    color: #3b82f6;
+    /* Lucide ikonka rangi */
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.feature-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #374151;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.partner-button {
+    background-color: #4361ee;
+    color: white;
+    padding: 16px 48px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.partner-button:hover {
+    opacity: 0.9;
+}
+
+
+
+@media (max-width: 992px) {
+    .partner-header h1 {
+        font-size: 28px;
+    }
+
+    .features-grid {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .partner-container {
+        padding: 40px 15px;
+    }
+
+    .partner-header h1 {
+        font-size: 24px;
+    }
+
+    .partner-header p {
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .feature-card {
+        width: auto;
+        padding: 20px 10px;
+    }
+
+    .partner-button {
+        width: 100%;
+        padding: 14px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .partner-header h1 {
+        font-size: 20px;
+    }
+}
